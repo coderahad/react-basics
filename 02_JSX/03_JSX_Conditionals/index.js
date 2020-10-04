@@ -10,6 +10,7 @@ class NumPicker extends React.Component {
     <div>
       <h1> Your Number is: {num} </h1>
       <p>{ num === 7 ? 'Congrats' : 'Unlucky!' }</p>
+      {num === 7 && <img src="https://i.giphy.com/media/nXxOjZrbnbRxS/giphy.webp"/>}
     </div>
     );
 	}
