@@ -6,11 +6,20 @@ function getNum() {
 class NumPicker extends React.Component {
 	render() {
     const num = getNum();
+    let msg;
+    if (num === 7) {
+      msg = 
+        <div>
+          <h1>COGRATS YOU WIN!</h1>
+          <img src="https://i.giphy.com/media/nXxOjZrbnbRxS/giphy.webp" />
+        </div>
+    } else {
+      msg = <p>Sorry You Lose!</p>
+    }
 		return (
     <div>
       <h1> Your Number is: {num} </h1>
-      <p>{ num === 7 ? 'Congrats' : 'Unlucky!' }</p>
-      {num === 7 && <img src="https://i.giphy.com/media/nXxOjZrbnbRxS/giphy.webp"/>}
+      {msg}
     </div>
     );
 	}
