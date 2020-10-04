@@ -1,9 +1,14 @@
+function getMood() {
+  const moods= ['Angry', 'Hungry', 'Silly', 'Agony', 'Quiet', 'Paranoid'];
+  return moods[Math.floor(Math.random() * moods.length)];
+}
+
+
 class JSXDemo extends React.Component {
 	render() {
 		return (
     <div>
-      <h1>Image</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"/>
+      <h1>My Current Mood Is: {getMood()}</h1>
     </div>
     );
 	}
