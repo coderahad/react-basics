@@ -1,15 +1,14 @@
-function helpful() {
-  console.log('I did a super helpful thing');
-};
-
-function sort() {
-  console.log('All Sorted');
+function choice(items) {
+  const random = Math.floor(Math.random() * items.length);
+  return items[random];
 }
 
-function sing() {
-  console.log('La La La');
+function remove(items, item) {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] === item) {
+      return [ ...items.slice(0, i), ...items.slice(i + 1)];
+    }
+  }
 }
 
-export default helpful;
-
-export {sing, sort};
+export {choice, remove};
