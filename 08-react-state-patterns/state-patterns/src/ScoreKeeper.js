@@ -9,13 +9,37 @@ class ScoreKeeper extends Component {
   }
 
   singleKill() {
+    //Not a good idea a update state like this
+    //if it relies on existing state values
     this.setState({ score: this.state.score + 1 });
+  }
+  // tripleKill() {
+  //   this.setState({ score: this.state.score + 1 });
+  //   this.setState({ score: this.state.score + 1 });
+  //   this.setState({ score: this.state.score + 1 });
+  // }
+
+  // tripleKill() {
+  //   this.setState(st => {
+  //     return { score: st.score + 1 };
+  //   });
+  //   this.setState(st => {
+  //     return { score: st.score + 1 };
+  //   });
+  //   this.setState(st => {
+  //     return { score: st.score + 1 };
+  //   });
+  // }
+
+  increamentScore(curState) {
+    return { score: curState.score + 1 }
   }
   tripleKill() {
-    this.setState({ score: this.state.score + 1 });
-    this.setState({ score: this.state.score + 1 });
-    this.setState({ score: this.state.score + 1 });
+    this.setState(this.increamentScore);
+    this.setState(this.increamentScore);
+    this.setState(this.increamentScore);
   }
+
   render() { 
     return ( 
       <div>
