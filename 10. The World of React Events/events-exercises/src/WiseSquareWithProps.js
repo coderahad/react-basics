@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './WiseSquare.css';
 
 class WiseSquareWithProps extends Component {
+  constructor(props) {
+    super(props);
+    this.dispenseWisdom = this.dispenseWisdom.bind(this);
+  };
   static defaultProps = {
     messages: [
       "A fool thinks himself to be wise, but a wise man knows himself to be a fool.",
@@ -18,7 +22,7 @@ class WiseSquareWithProps extends Component {
 
   render() { 
     return(
-      <div className='WiseSquare' onMouseEnter={()=> this.dispenseWisdom()}>
+      <div className='WiseSquare' onMouseEnter={this.dispenseWisdom}>
         😀
       </div>
     )
