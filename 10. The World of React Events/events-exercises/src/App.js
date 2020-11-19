@@ -4,12 +4,14 @@ import WiseSquare from './WiseSquare';
 import AnnoyingForm from './AnnoyingForm';
 import CopyDemo from './CopyDemo';
 import WiseSquareWithProps from './WiseSquareWithProps';
+import ExperimentalSquare from './ExperimentalSquare';
 
 function App() {
   return (
     <div className="App">
       <WiseSquare />
       <WiseSquareWithProps />
+      <ExperimentalSquare />
     </div>
   );
 }
