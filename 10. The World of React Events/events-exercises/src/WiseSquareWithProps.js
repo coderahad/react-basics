@@ -18,7 +18,7 @@ class WiseSquareWithProps extends Component {
 
   render() { 
     return(
-      <div className='WiseSquare' onMouseEnter={this.dispenseWisdom}>
+      <div className='WiseSquare' onMouseEnter={this.dispenseWisdom.bind(this)}>
         😀
       </div>
     )
