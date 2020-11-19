@@ -5,13 +5,12 @@ import AnnoyingForm from './AnnoyingForm';
 import CopyDemo from './CopyDemo';
 import WiseSquareWithProps from './WiseSquareWithProps';
 import ExperimentalSquare from './ExperimentalSquare';
+import ButtonList from './Buttonlist';
 
 function App() {
   return (
     <div className="App">
-      <WiseSquare />
-      <WiseSquareWithProps />
-      <ExperimentalSquare />
+      <ButtonList />
     </div>
   );
 }
