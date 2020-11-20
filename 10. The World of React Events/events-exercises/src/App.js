@@ -6,11 +6,12 @@ import CopyDemo from './CopyDemo';
 import WiseSquareWithProps from './WiseSquareWithProps';
 import ExperimentalSquare from './ExperimentalSquare';
 import ButtonList from './Buttonlist';
+import NumberList from './NumberList';
 
 function App() {
   return (
     <div className="App">
-      <ButtonList />
+      <NumberList />
     </div>
   );
 }
