@@ -7,11 +7,13 @@ import WiseSquareWithProps from './WiseSquareWithProps';
 import ExperimentalSquare from './ExperimentalSquare';
 import ButtonList from './Buttonlist';
 import NumberList from './NumberList';
+import BetterNumberList from './BetterNumberList';
 
 function App() {
   return (
     <div className="App">
       <NumberList />
+      <BetterNumberList />
     </div>
   );
 }
