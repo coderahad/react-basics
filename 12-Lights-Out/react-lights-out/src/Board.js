@@ -77,9 +77,12 @@ class Board extends Component {
         board[y][x] = !board[y][x];
       }
     }
-    flipCell(y, x);
+    flipCell(y, x);// Flip initial cell
     // TODO: flip this cell and the cells around it
-
+    flipCell(y, x-1);// Flip left 
+    flipCell(y, x+1);// Flip right
+    flipCell(y+1, x);// Flip above
+    flipCell(y-1, x);// Flip below
     // win when every cell is turned off
     // TODO: determine is the game has been won
     let hasWon = false;
