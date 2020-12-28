@@ -20,10 +20,8 @@ class Form extends Component {
       <div>
         <h1>Form Demo</h1>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' 
-          value={this.state.username}
-          onChange={this.handleChange}
-          />
+          <leble htmlFor='username'>Username</leble>
+          <input type='text' id='username' value={this.state.username} onChange={this.handleChange}/>
           <button>Submit</button>
         </form>
       </div>
