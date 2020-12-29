@@ -21,10 +21,10 @@ class ShoppingListForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <lable htmlFor='name'>Name:</lable>
+        <label htmlFor='name'>Name:</label>
         <input name='name' id='name' value={this.state.name} onChange={this.handleChange}/>
-        <lable htmlFor='qty'>Quantity:</lable>
-        <input name='qty' id='qty' onChange={this.handleChange}/>
+        <label htmlFor='qty'>Quantity:</label>
+        <input name='qty' id='qty' value={this.state.qty} onChange={this.handleChange}/>
         <button>Submit</button>
       </form>
   )}

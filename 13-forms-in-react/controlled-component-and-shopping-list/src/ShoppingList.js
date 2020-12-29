@@ -14,8 +14,9 @@ class ShoppingList extends Component {
     this.addItem = this.addItem.bind(this);
   }
   addItem(item) {
+    let newItem = {...item, id: uuidv4()}
     this.setState(state => ({
-      items: [...state.items, item]
+      items: [...state.items, newItem]
       })
     );
   }
@@ -24,7 +25,7 @@ class ShoppingList extends Component {
       <ul>
         {this.state.items.map(item => (
           <li key={item.id}>
-            {item.name}:{item.qty}
+            {item.name}: {item.qty}
           </li>
         ))}
       </ul>
